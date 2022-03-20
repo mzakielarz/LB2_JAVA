@@ -15,7 +15,7 @@ public class Main {
         //System.out.println(zadanie2b(3));
         //System.out.println(zadanie2c(4));
         // Zadanie3(1,4,21);
-        Zadanie4(true,true,false);
+          zadanie4();
 
     }
 
@@ -65,15 +65,19 @@ public class Main {
         else if (c > b && c > a && b > a) System.out.println("Wynik od min do max = " + a + " " + b + " " + c);
         else if (c > b && c > a && a > b) System.out.println("Wynik od min do max = " + b + " " + a + " " + c);
     }*/
-    public static void Zadanie4(boolean pogoda, boolean deszcz, boolean autobus) {
+    public static void zadanie4() {
+        boolean deszcz ;
+        boolean autobus;
         Scanner scan = new Scanner(System.in);
-        if (pogoda && autobus)
-            System.out.println("Weź parasol, dostaniesz się na uczelnie");
-
+        deszcz = scan.nextBoolean();
+        autobus = scan.nextBoolean();
+        if (deszcz && autobus)
+            System.out.println("„Weź parasol, „Dostaniesz się na uczelnie");
         if (deszcz && !autobus)
-            System.out.println("Nie dostaniesz się na uczelnie");
+            System.out.println("Nie dostaniesz się na uczelnię");
         if (!deszcz && autobus)
-            System.out.println("Dostaniesz się na uczelnie, ");
+            System.out.println("Dostaniesz się na uczelnie, „Miłego dnia i pięknej pogody");
+
     }
 
 }
