@@ -78,7 +78,7 @@ public class Main {
         if (!deszcz && autobus)
             System.out.println("Dostaniesz się na uczelnie, „Miłego dnia i pięknej pogody");
 
-    }
+     }
 
 }
 
