@@ -93,18 +93,34 @@ public class Main {
             System.out.println("suma: "+suma);
             }*/
 
-   public static void zadanie5(){
-       
+   public static boolean Palindrom(String tekst){
+       for (int i = 0; i < tekst.length()/2; i++) {
+           char znak = tekst.charAt(i);
+           char przeciwnyZnak = tekst.charAt(tekst.length() - 1 - i);
+
+           if (znak != przeciwnyZnak) return false;
+       }
+   return true;
    }
 
+    public static boolean Palindrom(long liczba){
+        return Palindrom(Long.toString(liczba));
+    }
 
 
 
-    public static void main(String[] args) {
+
+
+
+   public static void main(String[] args) {
         // zadanie1();
         //zadanie2();
        // zadanie3();
        // zadanie4();
+      /* System.out.println(Palindrom("kajak"));
+       System.out.println(Palindrom("ala"));
+       System.out.println(Palindrom("kamil"));
+       System.out.println(Palindrom("mama"));*/
     }
 
 
