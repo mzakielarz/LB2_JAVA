@@ -1,1 +1,2 @@
 oryginał
+zmiana
