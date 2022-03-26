@@ -1,2 +1,2 @@
-oryginał
-zmiana
+ZADANIA NA LABOLATORIA PO LAB2
+
