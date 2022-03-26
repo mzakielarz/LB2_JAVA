@@ -1,130 +1,131 @@
-package com.company;
-
-import java.sql.SQLOutput;
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
-
-    /*public static void zadanie1() {
-        int n;
-        double pkt;
-        double srednia = 0;
+    /*1. Grupa laboratoryjna składa się z n studentów (wartość n podaje użytkownik). Wprowadzamy
+        liczbę punktów dla każdego studenta. Napisz program, który obliczy średnią liczbę punktów w
+        grupie z wykorzystaniem pętli while.*/
+   /* public static void zadanie1() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj liczbę studentów");
+        int n = scan.nextInt();
         double suma = 0;
-        int ile=0;
-        Scanner input = new Scanner(System.in);
-        System.out.println("Podaj liczbe studentów w grupie: ");
-        n = input.nextInt();
+        double pkt=0;
+        double ile=0;
 
-        if (n > 0) {
-            while (n > 0) {
-                System.out.println("Podaj liczbe punktów od 0 do 50 ");
-                pkt = input.nextDouble();
-                if (pkt >= 0 && pkt <= 50) {
-                    suma = suma + pkt;
-                    ile++;
-                    n--;
-                }
-                continue;
-            }//koniec while
-            System.out.println("suma punktów wynosi: "+suma);
-            System.out.println("średnia wynosi: "+suma/ile);
-
+        while(n>0){
+            System.out.println("Podaj ilosc punktów od 0-50");
+            pkt = scan.nextDouble();
+            suma = suma + pkt;
+            ile++;
+            n--;
         }
-        else System.out.println("W grupie musi byc conajmniej 1 student");
+        System.out.println("ile: "+ile);
+        System.out.println("Suma: "+suma);
+        System.out.println("Średnia ocen to: "+ suma/ile);
     }*/
-
-    public static double wczytaj() {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Podaj liczbe: ");
-        double n = input.nextDouble();
-        return n;
-    }
-
-    /*public static void zadanie2() {
-        int ile_d = 0;
-        int ile_u = 0;
-        double suma_d = 0, suma_u = 0;
-
-       // System.out.println(wczytaj());
-        for (int i = 0; i <3 ; i++) {
-
-            double liczba = wczytaj();
-            if (liczba > 0) {
-                ile_d++;
-                suma_d += liczba;
-            } else {
-                ile_u++;
-                suma_u += liczba;
+   // 2. Napisz program, który pozwoli na wczytanie 10 liczb i wyznaczeniu ilości oraz sumy liczb
+    //ujemnych i dodatnich podanych przez użytkownika.
+   /* public static void zadanie2(){
+        Scanner scan = new Scanner(System.in);
+        double iloscLiczb = 4;
+        double liczba;
+        double suma = 0;
+        int ileU=0;
+        int ileD =0;
+        double sumaU = 0;
+        double sumaD = 0;
+        for (int i = 0; i <iloscLiczb ; i++) {
+            System.out.println("Podaj liczbę: ");
+            liczba = scan.nextDouble();
+            if(liczba<0){
+                ileU++;
+                sumaU += liczba;
             }
-        }//koniec for
-        System.out.println("Ilość dodatnich: "+ile_d+" suma: "+suma_d);
-        System.out.println("Ilość ujemnych: "+ile_u+" suma: "+suma_u);
-    }*/
-   /* public static void zadanie3(){
-        double liczba, suma=0;
-        double n = wczytaj();
-        if(n>0){
-            for (int i = 1; i < 3; i++) {
-                liczba=wczytaj();
-                if(liczba%2==0){
-                    suma+=liczba;
-                }
-            }System.out.println("Suma liczb parzystych: "+suma);//koniec for
+            if(liczba >=0){
+                ileD++;
+                sumaD += liczba;
+            }
+            suma += liczba;
+
         }
-        else
-            System.out.println("Podano błędne dane");
+        System.out.println("Ilość wszystkich liczb: "+iloscLiczb);
+        System.out.println("Suma wszystkich liczb: "+suma);
+        System.out.println("Ilość dodatnich: "+ileD);
+        System.out.println("Suma dodatnich: "+sumaD);
+        System.out.println("Ilość ujemnych: "+ileU);
+        System.out.println("Suma ujemnych: "+sumaU);
+
+
     }*/
+// 3. Dany jest ciąg n liczb (n>0), napisz program pozwalający na obliczenie sumy wszystkich liczb
+//parzystych w danym ciągu.
+/*public static void zadanie3(){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Podaj długość ciągu, n>0 ");
+    int n = scan.nextInt();//ilość liczb w ciągu
+    double liczba;
+    double sumaP = 0;
+    for (int i = 0; i < n; i++) {
+        System.out.println("Podaj liczbę: ");
+        liczba = scan.nextDouble();
+        if(liczba%2==0){
+            sumaP +=liczba;
+        }
+    }
+    System.out.println("Suma przystych liczb wynosi: "+sumaP);
+}*/
 
-       /* public static void zadanie4(){
-            // stworzenie obiektu klasy random
+// 4. Wykorzystując algorytm z zadania 5, napisz program który pozwoli użytkownikowi na
+//wylosowanie n liczb z przedziału (-10,45) i obliczy sumę wszystkich liczb parzystych w danym
+//ciągu.
 
-            Random liczba = new Random();
-            int suma=0;
-            // losowanie liczby z zakresu [0;100] i przypisianie do zmiennej całkowitej
-            for (int i = 0; i < 5; i++) {
-                int los = liczba.nextInt(-10,45);
-               // System.out.println(los);
-                if(los%2==0){
-                    suma+=los;
-                    System.out.println(los);
-                }
-                }
-            System.out.println("suma: "+suma);
-            }*/
-
-   public static boolean Palindrom(String tekst){
-       for (int i = 0; i < tekst.length()/2; i++) {
-           char znak = tekst.charAt(i);
-           char przeciwnyZnak = tekst.charAt(tekst.length() - 1 - i);
-
-           if (znak != przeciwnyZnak) return false;
-       }
-   return true;
-   }
-
-    public static boolean Palindrom(long liczba){
-        return Palindrom(Long.toString(liczba));
+/*public static void zadanie4() {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Podaj długość ciągu");
+    int n = scan.nextInt();
+    Random losowo = new Random();
+    int los;
+    double sumaP = 0;
+    while (n > 0){
+        los = losowo.nextInt(-10,45);
+        System.out.println(los);
+        if(los%2==0){
+            sumaP += los;
+        }
+        n--;
     }
 
+    System.out.println("Suma parzystych wyrazów: "+sumaP);
+}*/
 
+//5. Napisz program, który odpowie na pytanie, czy podane przez użytkownika słowo jest
+//palindromem. Palindrom to słowo, które jest takie samo czytane od początku i od końca, np.
+//kajak.
 
+    public static boolean zadanie5(String tekst){
+        for (int i = 0; i < tekst.length()/2; i++) {
+            char znak = tekst.charAt(i);
+            char przeciwnyZnak = tekst.charAt(tekst.length() - 1 - i);
 
+            if (znak != przeciwnyZnak) return false;
+        }
+        return true;
+    }
 
-
-   public static void main(String[] args) {
-        // zadanie1();
-        //zadanie2();
-       // zadanie3();
+   /* public static boolean zadanie5(long liczba){
+        return zadanie5(Long.toString(liczba));
+    }*/
+    public static void main(String[] args) {
+        //zadanie1();
+        // zadanie2();
+        //zadanie3();
        // zadanie4();
-      /* System.out.println(Palindrom("kajak"));
-       System.out.println(Palindrom("ala"));
-       System.out.println(Palindrom("kamil"));
-       System.out.println(Palindrom("mama"));*/
+        System.out.println(zadanie5("ala"));
+        System.out.println(zadanie5("kajak"));
+        System.out.println(zadanie5("mama"));
+        System.out.println(zadanie5("brat"));
+        System.out.println(zadanie5("kuba"));
     }
-
-
-
-
-
 }
+
