@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
 
@@ -102,7 +102,7 @@ public class Main {
           }
   }*/
 
-    public static void zadanie6(){
+  /*  public static void zadanie6(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Wprowadź a: ");
         double a = scan.nextDouble();
@@ -143,7 +143,161 @@ public class Main {
         }
 
 
+    }*/
+
+    /*public static void zabawa(){
+        int[] tab = new int[3];
+        int[] tab1 = {12,4,1,15};
+        int[] tab2 = new int[3];
+        tab2[0]=1;
+        tab2[1]=2;
+        tab2[2]=3;
+        for (int i = 0; i < tab1.length; i++) {
+            System.out.print(tab1[i]+"\t");
+        }
+        System.out.println();
+
+        System.out.println("Długość tablicy : "+tab1.length);
+        System.out.println("Po eachu");
+        for (int i:tab1) {
+            System.out.print(i+"\t");
+        }
+        System.out.println();
+
+        System.out.println("TABLICE WIELOWYMIAROWE");
+        int[][] matrix1 = {
+                {1,2,3},
+                {5,6,7},
+                {8,9,0},
+                {0,1},
+                {2,2,3}
+        };
+        for (int i = 0; i < matrix1.length; i++) {
+            for (int j = 0; j < matrix1[i].length; j++) {
+                System.out.print(matrix1[i][j]+"\t");
+            }
+            System.out.println();
+
+        }
+        System.out.println("długość matrixa: "+matrix1.length);
+    }*/
+
+
+    /////////////////// LAB3 ZADANIA //////////////////////////////////////////////
+   /* public static void zadanie1(){
+        double suma =0;
+        double srednia = 0;
+        double punkty;
+        int ile = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Wprowadź liczbę studentów: ");
+        int n = scan.nextInt();
+        double[] tab = new double[n];
+        System.out.println("Podaj punkty studentów: ");
+        /*for (int i = 0; i < tab.length; i++) { WYKORZYSTANIE FORA
+            punkty = scan.nextDouble();
+            tab[i]=punkty;
+        }
+        while (n!=0){
+            punkty = scan.nextDouble();
+            n--;
+            ile++;
+           suma = suma+punkty;
+        }
+       srednia = suma/ile;
+        System.out.println("Suma: "+suma);
+        System.out.println("srednia: "+srednia);
+
+    } */
+
+   /* public static void zadanie2(){
+        double sumaD=0, sumaU=0;
+        int ileD = 0, ileU=0;
+        double[] tab = new double[10];
+        Scanner scan = new Scanner(System.in);
+        for (int i = 0; i < tab.length; i++) {
+            tab[i] = scan.nextDouble();
+        }
+        for (int i = 0; i < tab.length ; i++) {
+            if(tab[i]>=0){
+                sumaD=sumaD+tab[i];
+                ileD++;
+            }
+            if(tab[i]<0){
+                sumaU+=tab[i];
+                ileU ++;
+            }
+        }
+        System.out.println("suma dodatnich: "+sumaD);
+        System.out.println("suma ujemnych: "+sumaU);
+        System.out.println("Liczba dodatnich: "+ileD);
+        System.out.println("Liczba ujemnych: "+ileU);
+    }*/
+   /* public static void zadanie3(){
+        int sumaP = 0;
+        double[] tab = {1,2,3,4,5,6};
+        for (int i = 0; i < tab.length; i++) {
+            if(tab[i]%2==0){
+                sumaP+=tab[i];
+            }
+        }
+        System.out.println("Suma parzystych: "+sumaP);
+    } */
+    /*public static void zadanie4(){
+        Random rand = new Random();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Wprowadź ile liczb chcesz wylosować: ");
+        int n = scan.nextInt();
+        double[] a = new double[n];
+        for (int i = 0; i < n; i++) {
+             a[i] = rand.nextInt(-10,45);
+        }
+
+        System.out.println("Wylosowane liczby to: ");
+        for (int i = 0; i < n; i++) {
+            System.out.println(a[i]);
+        }
+    }*/
+/////////////////LAB4////////////////////////////
+/*public static void zadanie1(){
+    double[] tab = {1,2,3,4};
+    double suma =0, srednia=0;
+    for (int i = 0; i < tab.length; i++) {
+        suma+=tab[i];
     }
+    srednia = suma/tab.length;
+    System.out.println("Suma: "+suma);
+    System.out.println("srednia: "+srednia);
+    System.out.println("FOR EACH: \n");
+}*/
+
+   /* public static void zadanie2(){
+        boolean[] tab = new boolean[20];
+        for (int i = 0; i < tab.length; i++) {
+            if (i % 2 == 0 || i==0) System.out.println(tab[i] = true);
+            else System.out.println(tab[i]=false);
+        }
+    }*/
+    /*public static void zadanie3(){
+        double srednia = 0, suma = 0, wariancja = 0;
+        Random rand = new Random();
+        double[] pomiary = new double[10];
+        for (int i = 0; i < pomiary.length ; i++) {
+            pomiary[i] = rand.nextDouble(-10,40);
+        }
+
+        for (int i = 0; i < pomiary.length; i++) {
+            suma+=pomiary[i];
+        }
+      srednia = suma/pomiary.length;
+        System.out.println("suma i srednia: "+suma+" "+srednia);
+        System.out.println("WARIANCJA:");
+        for (int i = 0; i < pomiary.length; i++) {
+            wariancja=Math.sqrt(wariancja+(Math.pow(pomiary[i]-srednia,2)))/ Math.sqrt(pomiary.length);
+        }
+        System.out.println(wariancja);
+    }*/
+
 
     public static void main(String[] args) {
         // imie();
@@ -151,7 +305,7 @@ public class Main {
         // System.out.println(zadanie3(7));
         // System.out.println(zadanie5());
         // zadanie1a();
-       // System.out.println(zadanie2a(1));
+        // System.out.println(zadanie2a(1));
         /*zadanie3av2(1,2,3);
         System.out.println();
         zadanie3av2(2,3,1);
@@ -163,8 +317,18 @@ public class Main {
         zadanie3av2(1,3,2);
         System.out.println();
         zadanie3av2(2,1,3);*/
-      //  zadanie4();
-        zadanie6();
+        //zadanie4();
+        //zadanie6();
+        //zabawa();
+       //////////////LAB3///////////////////////
+        //zadanie1();
+       // zadanie2();
+       // zadanie3();
+       // zadanie4();
+        /////////////////LAB4////////////////////////////
+        //zadanie1();
+      //  zadanie2();
+      //  zadanie3();
 
 
 
