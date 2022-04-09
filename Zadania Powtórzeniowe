@@ -132,7 +132,7 @@ public class Main {
         }
         if(choice==4) {
             if (b == 0)
-                System.out.println("nie dzieli sie przez 0 debilu, ale Dominik policzy granice <3");
+                System.out.println("nie dzieli sie przez 0");
             iloraz = a/b;
             System.out.println(iloraz);
         }
