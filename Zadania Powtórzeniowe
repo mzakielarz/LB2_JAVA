@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -132,7 +133,7 @@ public class Main {
         }
         if(choice==4) {
             if (b == 0)
-                System.out.println("nie dzieli sie przez 0");
+                System.out.println("nie dzieli sie przez 0 debilu, ale Dominik policzy granice <3");
             iloraz = a/b;
             System.out.println(iloraz);
         }
@@ -184,7 +185,7 @@ public class Main {
 
 
     /////////////////// LAB3 ZADANIA //////////////////////////////////////////////
-   /* public static void zadanie1(){
+   public static void zadanie1(){
         double suma =0;
         double srednia = 0;
         double punkty;
@@ -194,21 +195,17 @@ public class Main {
         int n = scan.nextInt();
         double[] tab = new double[n];
         System.out.println("Podaj punkty studentów: ");
-        /*for (int i = 0; i < tab.length; i++) { WYKORZYSTANIE FORA
-            punkty = scan.nextDouble();
-            tab[i]=punkty;
-        }
-        while (n!=0){
-            punkty = scan.nextDouble();
-            n--;
-            ile++;
+       while (n!=0){
+           punkty = scan.nextDouble();
+           n--;
+           ile++;
            suma = suma+punkty;
-        }
+       }
        srednia = suma/ile;
-        System.out.println("Suma: "+suma);
-        System.out.println("srednia: "+srednia);
+       System.out.println("Suma: "+suma);
+       System.out.println("srednia: "+srednia);
+        }
 
-    } */
 
    /* public static void zadanie2(){
         double sumaD=0, sumaU=0;
@@ -297,6 +294,7 @@ public class Main {
         }
         System.out.println(wariancja);
     }*/
+
 
 
     public static void main(String[] args) {
