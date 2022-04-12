@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Main {
 
-   /* public static void zadanie1(){
+    public static void zadanie1(){
         double suma = 0;
         double srednia = 0;
         int[] tab1 = {1,2,3,4};
@@ -16,7 +16,7 @@ public class Main {
         }
         System.out.println("Suma: "+suma);
         System.out.println("Średnia: "+suma/ tab1.length);
-    }*/
+    }
 
 
    /*public static void zadanie2() {
@@ -25,7 +25,7 @@ public class Main {
            if(i==0 || i%2==0) System.out.println(tab1[i]=true);
            else System.out.println(tab1[i] = false);
        }
-   }*/
+   }
 
     public static double losowanie(){
         Random rand = new Random();
