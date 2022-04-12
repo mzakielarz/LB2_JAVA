@@ -47,7 +47,7 @@ public class Main {
             System.out.println("Równanie liniowe, x = " + x);
         }
     }
-    /*public static double zadanie2b(double x){
+    public static double zadanie2b(double x){
         if(x>=1) return (x*x);
         if(x<1) return x;
         return x;
@@ -59,7 +59,7 @@ public class Main {
         else if(x<2) return x-4;
         return x;
     }
-   /* public static void Zadanie3(double a, double b, double c) {
+    public static void Zadanie3(double a, double b, double c) {
         if (a > b && a > c && b > c) System.out.println("Wynik od min do max = " + c + " " + b + " " + a);
         else if (b > a && b > c && a > c) System.out.println("Wynik od min do max = " + c + " " + a + " " + b);
         else if (c > b && c > a && b > a) System.out.println("Wynik od min do max = " + a + " " + b + " " + c);
