@@ -2,10 +2,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    /*1. Grupa laboratoryjna składa się z n studentów (wartość n podaje użytkownik). Wprowadzamy
+    1. Grupa laboratoryjna składa się z n studentów (wartość n podaje użytkownik). Wprowadzamy
         liczbę punktów dla każdego studenta. Napisz program, który obliczy średnią liczbę punktów w
         grupie z wykorzystaniem pętli while.*/
-   /* public static void zadanie1() {
+   public static void zadanie1() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj liczbę studentów");
         int n = scan.nextInt();
@@ -23,10 +23,10 @@ public class Main {
         System.out.println("ile: "+ile);
         System.out.println("Suma: "+suma);
         System.out.println("Średnia ocen to: "+ suma/ile);
-    }*/
+    }
    // 2. Napisz program, który pozwoli na wczytanie 10 liczb i wyznaczeniu ilości oraz sumy liczb
     //ujemnych i dodatnich podanych przez użytkownika.
-   /* public static void zadanie2(){
+    public static void zadanie2(){
         Scanner scan = new Scanner(System.in);
         double iloscLiczb = 4;
         double liczba;
@@ -57,10 +57,10 @@ public class Main {
         System.out.println("Suma ujemnych: "+sumaU);
 
 
-    }*/
+    }
 // 3. Dany jest ciąg n liczb (n>0), napisz program pozwalający na obliczenie sumy wszystkich liczb
 //parzystych w danym ciągu.
-/*public static void zadanie3(){
+public static void zadanie3(){
     Scanner scan = new Scanner(System.in);
     System.out.println("Podaj długość ciągu, n>0 ");
     int n = scan.nextInt();//ilość liczb w ciągu
@@ -74,13 +74,13 @@ public class Main {
         }
     }
     System.out.println("Suma przystych liczb wynosi: "+sumaP);
-}*/
+}
 
 // 4. Wykorzystując algorytm z zadania 5, napisz program który pozwoli użytkownikowi na
 //wylosowanie n liczb z przedziału (-10,45) i obliczy sumę wszystkich liczb parzystych w danym
 //ciągu.
 
-/*public static void zadanie4() {
+public static void zadanie4() {
     Scanner scan = new Scanner(System.in);
     System.out.println("Podaj długość ciągu");
     int n = scan.nextInt();
@@ -97,7 +97,7 @@ public class Main {
     }
 
     System.out.println("Suma parzystych wyrazów: "+sumaP);
-}*/
+}
 
 //5. Napisz program, który odpowie na pytanie, czy podane przez użytkownika słowo jest
 //palindromem. Palindrom to słowo, które jest takie samo czytane od początku i od końca, np.
@@ -113,9 +113,9 @@ public class Main {
         return true;
     }
 
-   /* public static boolean zadanie5(long liczba){
+    public static boolean zadanie5(long liczba){
         return zadanie5(Long.toString(liczba));
-    }*/
+    }
     public static void main(String[] args) {
         //zadanie1();
         // zadanie2();
